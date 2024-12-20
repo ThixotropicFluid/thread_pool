@@ -1,0 +1,44 @@
+\hypertarget{structLinkedList}{}\doxysection{Linked\+List Struct Reference}
+\label{structLinkedList}\index{LinkedList@{LinkedList}}
+
+
+Collaboration diagram for Linked\+List\+:
+% FIG 0
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structLinkedList_acf834fc2cca425f1060db668952bd4fe}\label{structLinkedList_acf834fc2cca425f1060db668952bd4fe}} 
+struct \mbox{\hyperlink{structNode}{Node}} $\ast$ {\bfseries head}
+\item 
+\mbox{\Hypertarget{structLinkedList_ad061d9781ee5724edfee03c64623ca6a}\label{structLinkedList_ad061d9781ee5724edfee03c64623ca6a}} 
+struct \mbox{\hyperlink{structNode}{Node}} $\ast$ {\bfseries tail}
+\item 
+\mbox{\Hypertarget{structLinkedList_a0ee3b52ce8c1297315a78a59de6aba24}\label{structLinkedList_a0ee3b52ce8c1297315a78a59de6aba24}} 
+int {\bfseries length}
+\item 
+\mbox{\Hypertarget{structLinkedList_a6ee16c40c365ccc6f3b8046868ecd026}\label{structLinkedList_a6ee16c40c365ccc6f3b8046868ecd026}} 
+void($\ast$ {\bfseries insert\+\_\+head} )(struct \mbox{\hyperlink{structLinkedList}{Linked\+List}} $\ast$list, void $\ast$data, unsigned int size)
+\item 
+\mbox{\Hypertarget{structLinkedList_a744f5029130696d6c839ad1341a33b19}\label{structLinkedList_a744f5029130696d6c839ad1341a33b19}} 
+void($\ast$ {\bfseries insert\+\_\+tail} )(struct \mbox{\hyperlink{structLinkedList}{Linked\+List}} $\ast$list, void $\ast$data, unsigned int size)
+\item 
+\mbox{\Hypertarget{structLinkedList_a0107466075d9e8945ec8c236b0895b22}\label{structLinkedList_a0107466075d9e8945ec8c236b0895b22}} 
+void($\ast$ {\bfseries insert} )(struct \mbox{\hyperlink{structLinkedList}{Linked\+List}} $\ast$list, int position, void $\ast$data, unsigned int size)
+\item 
+\mbox{\Hypertarget{structLinkedList_a9a744fee867dd8511f7971f14ae3ceaf}\label{structLinkedList_a9a744fee867dd8511f7971f14ae3ceaf}} 
+void $\ast$($\ast$ {\bfseries peek\+\_\+tail} )(struct \mbox{\hyperlink{structLinkedList}{Linked\+List}} $\ast$list)
+\item 
+\mbox{\Hypertarget{structLinkedList_a8b50096887fa2d91bbb92ca3fbc99f3e}\label{structLinkedList_a8b50096887fa2d91bbb92ca3fbc99f3e}} 
+void $\ast$($\ast$ {\bfseries peek\+\_\+head} )(struct \mbox{\hyperlink{structLinkedList}{Linked\+List}} $\ast$list)
+\item 
+\mbox{\Hypertarget{structLinkedList_a9f75cbab288aeb4fe6c9212c2b8f17a5}\label{structLinkedList_a9f75cbab288aeb4fe6c9212c2b8f17a5}} 
+void $\ast$($\ast$ {\bfseries pop\+\_\+tail} )(struct \mbox{\hyperlink{structLinkedList}{Linked\+List}} $\ast$list)
+\item 
+\mbox{\Hypertarget{structLinkedList_a84544424f31dc4b0f261c998227bc699}\label{structLinkedList_a84544424f31dc4b0f261c998227bc699}} 
+void $\ast$($\ast$ {\bfseries pop\+\_\+head} )(struct \mbox{\hyperlink{structLinkedList}{Linked\+List}} $\ast$list)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/data\+\_\+structures/lists/linked\+\_\+list.\+h\end{DoxyCompactItemize}

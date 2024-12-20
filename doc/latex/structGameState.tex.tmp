@@ -1,0 +1,32 @@
+\hypertarget{structGameState}{}\doxysection{Game\+State Struct Reference}
+\label{structGameState}\index{GameState@{GameState}}
+
+
+Collaboration diagram for Game\+State\+:
+% FIG 0
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structGameState_ad02b36076022156b1d012132a6d8b21e}\label{structGameState_ad02b36076022156b1d012132a6d8b21e}} 
+Game\+Status {\bfseries game\+\_\+status}
+\item 
+\mbox{\Hypertarget{structGameState_a71d9789ff7dcb5bcd75c4e072d6d7547}\label{structGameState_a71d9789ff7dcb5bcd75c4e072d6d7547}} 
+\mbox{\hyperlink{structSettings}{Settings}} {\bfseries settings}
+\item 
+\mbox{\Hypertarget{structGameState_a29868bc048715fa72252e99e11c93dd1}\label{structGameState_a29868bc048715fa72252e99e11c93dd1}} 
+\mbox{\hyperlink{structPlayer}{Player}} {\bfseries player}
+\item 
+\mbox{\Hypertarget{structGameState_a23d0e906d58b13326cee098226784fda}\label{structGameState_a23d0e906d58b13326cee098226784fda}} 
+\mbox{\hyperlink{structEnemy}{Enemy}} {\bfseries enemies} \mbox{[}MAX\+\_\+\+ENEMIES\mbox{]}
+\item 
+\mbox{\Hypertarget{structGameState_a90d3bbec2ac9df732e75e095857c0403}\label{structGameState_a90d3bbec2ac9df732e75e095857c0403}} 
+int {\bfseries enemy\+\_\+count}
+\item 
+\mbox{\Hypertarget{structGameState_ae857efad0b15ed83d996668678d8ccd1}\label{structGameState_ae857efad0b15ed83d996668678d8ccd1}} 
+int {\bfseries enemy\+\_\+spawn\+\_\+timer}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/game.\+c\end{DoxyCompactItemize}

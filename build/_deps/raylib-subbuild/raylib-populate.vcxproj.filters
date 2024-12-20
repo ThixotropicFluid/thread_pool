@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\danie\source\repos\c\fisrt_c_game\build\_deps\raylib-subbuild\CMakeFiles\7ef140a91b8b71f55ac6296d748c942b\raylib-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\danie\source\repos\c\fisrt_c_game\build\_deps\raylib-subbuild\CMakeFiles\7ef140a91b8b71f55ac6296d748c942b\raylib-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\danie\source\repos\c\fisrt_c_game\build\_deps\raylib-subbuild\CMakeFiles\7ef140a91b8b71f55ac6296d748c942b\raylib-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\danie\source\repos\c\fisrt_c_game\build\_deps\raylib-subbuild\CMakeFiles\7ef140a91b8b71f55ac6296d748c942b\raylib-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\danie\source\repos\c\fisrt_c_game\build\_deps\raylib-subbuild\CMakeFiles\7ef140a91b8b71f55ac6296d748c942b\raylib-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\danie\source\repos\c\fisrt_c_game\build\_deps\raylib-subbuild\CMakeFiles\7ef140a91b8b71f55ac6296d748c942b\raylib-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\danie\source\repos\c\fisrt_c_game\build\_deps\raylib-subbuild\CMakeFiles\7ef140a91b8b71f55ac6296d748c942b\raylib-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\danie\source\repos\c\fisrt_c_game\build\_deps\raylib-subbuild\CMakeFiles\7ef140a91b8b71f55ac6296d748c942b\raylib-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\danie\source\repos\c\fisrt_c_game\build\_deps\raylib-subbuild\CMakeFiles\a659c6576c6c4904d7683862711c568e\raylib-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\danie\source\repos\c\fisrt_c_game\build\_deps\raylib-subbuild\CMakeFiles\80424485c7c2858df18b8863eb7e7e98\raylib-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\danie\source\repos\c\fisrt_c_game\build\_deps\raylib-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\danie\source\repos\c\fisrt_c_game\build\_deps\raylib-subbuild\CMakeFiles\raylib-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3AA1A03C-5EA1-3CEF-B05D-4826317296AE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

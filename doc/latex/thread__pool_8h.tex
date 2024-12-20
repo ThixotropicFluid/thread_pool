@@ -1,0 +1,187 @@
+\hypertarget{thread__pool_8h}{}\doxysection{src/thread\+\_\+pool/thread\+\_\+pool.h File Reference}
+\label{thread__pool_8h}\index{src/thread\_pool/thread\_pool.h@{src/thread\_pool/thread\_pool.h}}
+
+
+Threadpool implementaion.  
+
+
+{\ttfamily \#include \char`\"{}../data\+\_\+structures/lists/linked\+\_\+list.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$pthread.\+h$>$}\newline
+Include dependency graph for thread\+\_\+pool.\+h\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structThreadExecuter}{Thread\+Executer}}
+\begin{DoxyCompactList}\small\item\em Manages the control flow for spawning, locking, and serving jobs from different thread pools. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structThreadPool}{Thread\+Pool}}
+\begin{DoxyCompactList}\small\item\em A collection of concuretly runable jobs. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structJob}{Job}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{thread__pool_8h_abf60514393497db641440039f9156561}\label{thread__pool_8h_abf60514393497db641440039f9156561}} 
+\#define \mbox{\hyperlink{thread__pool_8h_abf60514393497db641440039f9156561}{THREAD\+\_\+\+POOL\+\_\+\+MAX\+\_\+\+POOLS}}~50
+\begin{DoxyCompactList}\small\item\em Maximum number of thread pools supported. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{thread__pool_8h_a1d5f9a0a6439db9d27573f4ea768e03a}\label{thread__pool_8h_a1d5f9a0a6439db9d27573f4ea768e03a}} 
+\#define \mbox{\hyperlink{thread__pool_8h_a1d5f9a0a6439db9d27573f4ea768e03a}{THREAD\+\_\+\+POOL\+\_\+\+MAX\+\_\+\+THREADS}}~256
+\begin{DoxyCompactList}\small\item\em Maximum number of threads in a thread executer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{thread__pool_8h_a85a404c366c8695b610e1bb6af5c61de}\label{thread__pool_8h_a85a404c366c8695b610e1bb6af5c61de}} 
+typedef enum \mbox{\hyperlink{thread__pool_8h_a7eb534b11f7e60a7da3a2d2470abde6f}{Job\+Flags}} \mbox{\hyperlink{thread__pool_8h_a85a404c366c8695b610e1bb6af5c61de}{Job\+Flags}}
+\begin{DoxyCompactList}\small\item\em Flags used for \mbox{\hyperlink{structJob}{Job}} execution. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{thread__pool_8h_a26002663f682518d1d88f2b19436e4c7}\label{thread__pool_8h_a26002663f682518d1d88f2b19436e4c7}} 
+typedef enum \mbox{\hyperlink{thread__pool_8h_a97d343025222f6ac23916775492ce88b}{Pool\+Flags}} \mbox{\hyperlink{thread__pool_8h_a26002663f682518d1d88f2b19436e4c7}{Pool\+Flags}}
+\begin{DoxyCompactList}\small\item\em Flags used to \mbox{\hyperlink{structThreadPool}{Thread\+Pool}} managment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{thread__pool_8h_a48473e6da89a499160af3b83418ee3e6}\label{thread__pool_8h_a48473e6da89a499160af3b83418ee3e6}} 
+typedef struct \mbox{\hyperlink{structThreadExecuter}{Thread\+Executer}} {\bfseries Thread\+Executer}
+\item 
+\mbox{\Hypertarget{thread__pool_8h_a41038e134a98ed33feac12f376a22a9d}\label{thread__pool_8h_a41038e134a98ed33feac12f376a22a9d}} 
+typedef struct \mbox{\hyperlink{structThreadPool}{Thread\+Pool}} \mbox{\hyperlink{thread__pool_8h_a41038e134a98ed33feac12f376a22a9d}{Thread\+Pool}}
+\begin{DoxyCompactList}\small\item\em A collection of concuretly runable jobs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{thread__pool_8h_a7f678ed7503a7b4211821d14323751d8}\label{thread__pool_8h_a7f678ed7503a7b4211821d14323751d8}} 
+typedef struct \mbox{\hyperlink{structJob}{Job}} {\bfseries Job}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{thread__pool_8h_a7eb534b11f7e60a7da3a2d2470abde6f}{Job\+Flags}} \{ \mbox{\hyperlink{thread__pool_8h_a7eb534b11f7e60a7da3a2d2470abde6fab8695b2dd707e90e3a83381e07c3c821}{Job\+Buffer\+Swap}} = 1 $<$$<$ 0
+ \}
+\begin{DoxyCompactList}\small\item\em Flags used for \mbox{\hyperlink{structJob}{Job}} execution. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{thread__pool_8h_a97d343025222f6ac23916775492ce88b}{Pool\+Flags}} \{ \mbox{\hyperlink{thread__pool_8h_a97d343025222f6ac23916775492ce88ba7467d16c28a2e16d84797a3994260cb2}{Pool\+Buffer\+Swap}} = 1 $<$$<$ 0
+, \mbox{\hyperlink{thread__pool_8h_a97d343025222f6ac23916775492ce88bae1550b3b3cfc7a6c6ea062612d8b8c21}{Pool\+Asynchronous}} = 1 $<$$<$ 1
+, \mbox{\hyperlink{thread__pool_8h_a97d343025222f6ac23916775492ce88ba61751a9712e75234235c2f33b704a651}{Pool\+To\+Execute}} = 1 $<$$<$ 2
+, \mbox{\hyperlink{thread__pool_8h_a97d343025222f6ac23916775492ce88ba64137aeaa521a17f965ffed9f259fa55}{Pool\+Scheduled}} = 1 $<$$<$ 3
+ \}
+\begin{DoxyCompactList}\small\item\em Flags used to \mbox{\hyperlink{structThreadPool}{Thread\+Pool}} managment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structThreadExecuter}{Thread\+Executer}} $\ast$ \mbox{\hyperlink{thread__pool_8h_a40c3f588a0af8a4b36ae8f37187e95e2}{thread\+\_\+pool\+\_\+thread\+\_\+executer\+\_\+constructor}} ()
+\item 
+\mbox{\Hypertarget{thread__pool_8h_a1114676cd92e90b7521569999d4b2e17}\label{thread__pool_8h_a1114676cd92e90b7521569999d4b2e17}} 
+void {\bfseries thread\+\_\+pool\+\_\+thread\+\_\+executer\+\_\+destructor} (\mbox{\hyperlink{structThreadExecuter}{Thread\+Executer}} $\ast$thread\+\_\+executer)
+\item 
+\mbox{\Hypertarget{thread__pool_8h_a0b6b4ccc2ab6c79b11f8b0eb7846dc55}\label{thread__pool_8h_a0b6b4ccc2ab6c79b11f8b0eb7846dc55}} 
+\mbox{\hyperlink{structThreadPool}{Thread\+Pool}} $\ast$ {\bfseries thread\+\_\+pool\+\_\+thread\+\_\+pool\+\_\+constructor} ()
+\item 
+\mbox{\Hypertarget{thread__pool_8h_a84b4f7c80e9318a36e311fe332c164ca}\label{thread__pool_8h_a84b4f7c80e9318a36e311fe332c164ca}} 
+void {\bfseries thread\+\_\+pool\+\_\+thread\+\_\+pool\+\_\+destructor} (\mbox{\hyperlink{structThreadPool}{Thread\+Pool}} $\ast$thread\+\_\+pool)
+\item 
+\mbox{\Hypertarget{thread__pool_8h_a4bec4f4d1d013b13fa746a3cda5bda8b}\label{thread__pool_8h_a4bec4f4d1d013b13fa746a3cda5bda8b}} 
+\mbox{\hyperlink{structJob}{Job}} $\ast$ {\bfseries thread\+\_\+pool\+\_\+job\+\_\+constructor} ()
+\item 
+\mbox{\Hypertarget{thread__pool_8h_ae6b18f6921cbfc8dba865481f38da025}\label{thread__pool_8h_ae6b18f6921cbfc8dba865481f38da025}} 
+void {\bfseries thread\+\_\+pool\+\_\+job\+\_\+destructor} (\mbox{\hyperlink{structJob}{Job}} $\ast$job)
+\item 
+void \mbox{\hyperlink{thread__pool_8h_aaa37b027302500280f7ab5cb86714b4b}{thread\+\_\+pool\+\_\+insert\+\_\+pool}} (\mbox{\hyperlink{structThreadExecuter}{Thread\+Executer}} $\ast$thread\+\_\+executer, \mbox{\hyperlink{structThreadPool}{Thread\+Pool}} $\ast$thread\+\_\+pool)
+\begin{DoxyCompactList}\small\item\em Inserts a pool into the routine of the thread executer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{thread__pool_8h_afa131d910025de9fbc16e8545203e007}{thread\+\_\+pool\+\_\+insert\+\_\+job}} (\mbox{\hyperlink{structThreadExecuter}{Thread\+Executer}} $\ast$thread\+\_\+executer, int thread\+\_\+pool\+\_\+id, \mbox{\hyperlink{structJob}{Job}} $\ast$job)
+\begin{DoxyCompactList}\small\item\em adds a job to a thread pool which is in a thread executer \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{thread__pool_8h_a7bb5252b9ecee0e83a3efd19a36b8cef}\label{thread__pool_8h_a7bb5252b9ecee0e83a3efd19a36b8cef}} 
+void {\bfseries thread\+\_\+pool\+\_\+get\+\_\+next\+\_\+job} (\mbox{\hyperlink{structThreadExecuter}{Thread\+Executer}} $\ast$thread\+\_\+executer)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Threadpool implementaion. 
+
+Structures used for the setup and dispatch of a thread pool. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{thread__pool_8h_a7eb534b11f7e60a7da3a2d2470abde6f}\label{thread__pool_8h_a7eb534b11f7e60a7da3a2d2470abde6f}} 
+\index{thread\_pool.h@{thread\_pool.h}!JobFlags@{JobFlags}}
+\index{JobFlags@{JobFlags}!thread\_pool.h@{thread\_pool.h}}
+\doxysubsubsection{\texorpdfstring{JobFlags}{JobFlags}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{thread__pool_8h_a7eb534b11f7e60a7da3a2d2470abde6f}{Job\+Flags}}}
+
+
+
+Flags used for \mbox{\hyperlink{structJob}{Job}} execution. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{JobBufferSwap@{JobBufferSwap}!thread\_pool.h@{thread\_pool.h}}\index{thread\_pool.h@{thread\_pool.h}!JobBufferSwap@{JobBufferSwap}}}\mbox{\Hypertarget{thread__pool_8h_a7eb534b11f7e60a7da3a2d2470abde6fab8695b2dd707e90e3a83381e07c3c821}\label{thread__pool_8h_a7eb534b11f7e60a7da3a2d2470abde6fab8695b2dd707e90e3a83381e07c3c821}} 
+Job\+Buffer\+Swap&This Jobs requires input and output buffers swaped \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{thread__pool_8h_a97d343025222f6ac23916775492ce88b}\label{thread__pool_8h_a97d343025222f6ac23916775492ce88b}} 
+\index{thread\_pool.h@{thread\_pool.h}!PoolFlags@{PoolFlags}}
+\index{PoolFlags@{PoolFlags}!thread\_pool.h@{thread\_pool.h}}
+\doxysubsubsection{\texorpdfstring{PoolFlags}{PoolFlags}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{thread__pool_8h_a97d343025222f6ac23916775492ce88b}{Pool\+Flags}}}
+
+
+
+Flags used to \mbox{\hyperlink{structThreadPool}{Thread\+Pool}} managment. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PoolBufferSwap@{PoolBufferSwap}!thread\_pool.h@{thread\_pool.h}}\index{thread\_pool.h@{thread\_pool.h}!PoolBufferSwap@{PoolBufferSwap}}}\mbox{\Hypertarget{thread__pool_8h_a97d343025222f6ac23916775492ce88ba7467d16c28a2e16d84797a3994260cb2}\label{thread__pool_8h_a97d343025222f6ac23916775492ce88ba7467d16c28a2e16d84797a3994260cb2}} 
+Pool\+Buffer\+Swap&This pool contains Jobs that require buffer swapping \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PoolAsynchronous@{PoolAsynchronous}!thread\_pool.h@{thread\_pool.h}}\index{thread\_pool.h@{thread\_pool.h}!PoolAsynchronous@{PoolAsynchronous}}}\mbox{\Hypertarget{thread__pool_8h_a97d343025222f6ac23916775492ce88bae1550b3b3cfc7a6c6ea062612d8b8c21}\label{thread__pool_8h_a97d343025222f6ac23916775492ce88bae1550b3b3cfc7a6c6ea062612d8b8c21}} 
+Pool\+Asynchronous&This pool can be run without regard to other pools status. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PoolToExecute@{PoolToExecute}!thread\_pool.h@{thread\_pool.h}}\index{thread\_pool.h@{thread\_pool.h}!PoolToExecute@{PoolToExecute}}}\mbox{\Hypertarget{thread__pool_8h_a97d343025222f6ac23916775492ce88ba61751a9712e75234235c2f33b704a651}\label{thread__pool_8h_a97d343025222f6ac23916775492ce88ba61751a9712e75234235c2f33b704a651}} 
+Pool\+To\+Execute&This pool is requesting to be executed. This flag will be unset once the pool has been pushed into the job queue. This flag is ignored if Pool\+Scheduled flag is set \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PoolScheduled@{PoolScheduled}!thread\_pool.h@{thread\_pool.h}}\index{thread\_pool.h@{thread\_pool.h}!PoolScheduled@{PoolScheduled}}}\mbox{\Hypertarget{thread__pool_8h_a97d343025222f6ac23916775492ce88ba64137aeaa521a17f965ffed9f259fa55}\label{thread__pool_8h_a97d343025222f6ac23916775492ce88ba64137aeaa521a17f965ffed9f259fa55}} 
+Pool\+Scheduled&This pool is part of the regular execution loop. It will automatically be scheduled according first in first out \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{thread__pool_8h_afa131d910025de9fbc16e8545203e007}\label{thread__pool_8h_afa131d910025de9fbc16e8545203e007}} 
+\index{thread\_pool.h@{thread\_pool.h}!thread\_pool\_insert\_job@{thread\_pool\_insert\_job}}
+\index{thread\_pool\_insert\_job@{thread\_pool\_insert\_job}!thread\_pool.h@{thread\_pool.h}}
+\doxysubsubsection{\texorpdfstring{thread\_pool\_insert\_job()}{thread\_pool\_insert\_job()}}
+{\footnotesize\ttfamily int thread\+\_\+pool\+\_\+insert\+\_\+job (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structThreadExecuter}{Thread\+Executer}} $\ast$}]{thread\+\_\+executer,  }\item[{int}]{thread\+\_\+pool\+\_\+id,  }\item[{\mbox{\hyperlink{structJob}{Job}} $\ast$}]{job }\end{DoxyParamCaption})}
+
+
+
+adds a job to a thread pool which is in a thread executer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em thread\+\_\+executer} & Thread Executer to add to \\
+\hline
+{\em thread\+\_\+pool\+\_\+id} & ID of pool to be added to. If the pool if the pool id does not exist, the job addition will fail \\
+\hline
+{\em job} & \mbox{\hyperlink{structJob}{Job}} to be added \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int ID of the job, -\/1 if the job was failed to be added. In the failure case, the ownership of the job stays will the caller.
+\end{DoxyReturn}
+This function adds a job into a pool in a thread executer. If the pool has a Pool asycnous flag, the job will be done accordind to fisrt in fist out. Otherwise, the job will be added into an addition queue, which will be resolved at the start of the next thread execution group. \mbox{\Hypertarget{thread__pool_8h_aaa37b027302500280f7ab5cb86714b4b}\label{thread__pool_8h_aaa37b027302500280f7ab5cb86714b4b}} 
+\index{thread\_pool.h@{thread\_pool.h}!thread\_pool\_insert\_pool@{thread\_pool\_insert\_pool}}
+\index{thread\_pool\_insert\_pool@{thread\_pool\_insert\_pool}!thread\_pool.h@{thread\_pool.h}}
+\doxysubsubsection{\texorpdfstring{thread\_pool\_insert\_pool()}{thread\_pool\_insert\_pool()}}
+{\footnotesize\ttfamily void thread\+\_\+pool\+\_\+insert\+\_\+pool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structThreadExecuter}{Thread\+Executer}} $\ast$}]{thread\+\_\+executer,  }\item[{\mbox{\hyperlink{structThreadPool}{Thread\+Pool}} $\ast$}]{thread\+\_\+pool }\end{DoxyParamCaption})}
+
+
+
+Inserts a pool into the routine of the thread executer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em thread\+\_\+executer} & \\
+\hline
+{\em thread\+\_\+pool} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{thread__pool_8h_a40c3f588a0af8a4b36ae8f37187e95e2}\label{thread__pool_8h_a40c3f588a0af8a4b36ae8f37187e95e2}} 
+\index{thread\_pool.h@{thread\_pool.h}!thread\_pool\_thread\_executer\_constructor@{thread\_pool\_thread\_executer\_constructor}}
+\index{thread\_pool\_thread\_executer\_constructor@{thread\_pool\_thread\_executer\_constructor}!thread\_pool.h@{thread\_pool.h}}
+\doxysubsubsection{\texorpdfstring{thread\_pool\_thread\_executer\_constructor()}{thread\_pool\_thread\_executer\_constructor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structThreadExecuter}{Thread\+Executer}}$\ast$ thread\+\_\+pool\+\_\+thread\+\_\+executer\+\_\+constructor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constucts Thread Executer 

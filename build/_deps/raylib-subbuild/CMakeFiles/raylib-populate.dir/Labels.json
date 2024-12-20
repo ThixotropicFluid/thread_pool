@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/danie/source/repos/c/fisrt_c_game/build/_deps/raylib-subbuild/CMakeFiles/raylib-populate"
+		},
+		{
+			"file" : "C:/Users/danie/source/repos/c/fisrt_c_game/build/_deps/raylib-subbuild/CMakeFiles/80424485c7c2858df18b8863eb7e7e98/raylib-populate.rule"
+		},
+		{
+			"file" : "C:/Users/danie/source/repos/c/fisrt_c_game/build/_deps/raylib-subbuild/CMakeFiles/a659c6576c6c4904d7683862711c568e/raylib-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/danie/source/repos/c/fisrt_c_game/build/_deps/raylib-subbuild/CMakeFiles/7ef140a91b8b71f55ac6296d748c942b/raylib-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/danie/source/repos/c/fisrt_c_game/build/_deps/raylib-subbuild/CMakeFiles/7ef140a91b8b71f55ac6296d748c942b/raylib-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/danie/source/repos/c/fisrt_c_game/build/_deps/raylib-subbuild/CMakeFiles/7ef140a91b8b71f55ac6296d748c942b/raylib-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/danie/source/repos/c/fisrt_c_game/build/_deps/raylib-subbuild/CMakeFiles/7ef140a91b8b71f55ac6296d748c942b/raylib-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/danie/source/repos/c/fisrt_c_game/build/_deps/raylib-subbuild/CMakeFiles/7ef140a91b8b71f55ac6296d748c942b/raylib-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/danie/source/repos/c/fisrt_c_game/build/_deps/raylib-subbuild/CMakeFiles/7ef140a91b8b71f55ac6296d748c942b/raylib-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/danie/source/repos/c/fisrt_c_game/build/_deps/raylib-subbuild/CMakeFiles/7ef140a91b8b71f55ac6296d748c942b/raylib-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/danie/source/repos/c/fisrt_c_game/build/_deps/raylib-subbuild/CMakeFiles/7ef140a91b8b71f55ac6296d748c942b/raylib-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"raylib-populate"
+		],
+		"name" : "raylib-populate"
+	}
+}
