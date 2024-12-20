@@ -1,6 +1,6 @@
-^C:\USERS\DANIE\SOURCE\REPOS\C\FISRT_C_GAME\BUILD\CMAKEFILES\BA30A6FDE3ECCA14BD3A80655972366F\GENERATE.STAMP.RULE
+^C:\USERS\DANIE\SOURCE\REPOS\C\THREAD_POOL\BUILD\CMAKEFILES\096A3F44CDD2940C4FABF8F1CD9B0936\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/danie/source/repos/c/fisrt_c_game -BC:/Users/danie/source/repos/c/fisrt_c_game/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/danie/source/repos/c/fisrt_c_game/build/game.sln
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/danie/source/repos/c/thread_pool -BC:/Users/danie/source/repos/c/thread_pool/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/danie/source/repos/c/thread_pool/build/thread_pool.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

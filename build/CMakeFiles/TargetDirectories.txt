@@ -1,5 +1,4 @@
-C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/game.dir
-C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/PACKAGE.dir
-C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/INSTALL.dir
-C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/danie/source/repos/c/thread_pool/build/CMakeFiles/thread_pool.dir
+C:/Users/danie/source/repos/c/thread_pool/build/CMakeFiles/INSTALL.dir
+C:/Users/danie/source/repos/c/thread_pool/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/danie/source/repos/c/thread_pool/build/CMakeFiles/ZERO_CHECK.dir
