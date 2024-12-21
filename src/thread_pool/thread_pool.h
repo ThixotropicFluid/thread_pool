@@ -12,6 +12,7 @@
  */
 
 #include "../data_structures/lists/linked_list.h"
+#include "stdint.h"
 
 /*
 #ifdef _WIN32
@@ -29,6 +30,8 @@
  *  @brief Maximum number of threads in a thread executer.
  */
 #define THREAD_POOL_MAX_THREADS 256
+
+#define THEAD_POOL_MAX_STRING_LENGTH 50
 
 /**
  * @brief Flags used for Job execution.
@@ -95,11 +98,9 @@ typedef struct ThreadExecuter {
  */
 typedef struct ThreadPool {
     //  Repseresnts a set of concourent tasks
-    
-    char* name; // optional name, for debugging purpouses
-    int id; // Unique ID for inserting pool, up to THREAD_POOL_MAX_POOLS pools
-    int pool_priority; // used by ThreadExecuter to serve next job
-    int pool_flags; // flags used by jobs and 
+    uint32_t id; // Unique ID for inserting pool, up to THREAD_POOL_MAX_POOLS pools
+    uint32_t priority; // used by ThreadExecuter to serve next job
+    uint32_t flags; // flags used by jobs and 
 
     struct LinkedList jobs; // set of jobs
     
@@ -126,7 +127,7 @@ typedef struct Job {
      */
     void* input;
     void* output;
-    int flags;
+    uint32_t flags;
 } Job;
 
 
@@ -135,10 +136,10 @@ typedef struct Job {
 ThreadExecuter* thread_pool_thread_executer_constructor();
 void thread_pool_thread_executer_destructor(ThreadExecuter* thread_executer);
 
-ThreadPool* thread_pool_thread_pool_constructor();
+ThreadPool* thread_pool_thread_pool_constructor(uint32_t priority, uint32_t flags);
 void thread_pool_thread_pool_destructor(ThreadPool* thread_pool);
 
-Job* thread_pool_job_constructor(void* (*run_job)(const void* input, void* output), void* (*free_data)(void* input, void* output), void* input, void* output, int flags);
+Job* thread_pool_job_constructor(void* (*run_job)(const void* input, void* output), void* (*free_data)(void* input, void* output), void* input, void* output, uint32_t flags);
 void thread_pool_job_destructor(Job* job);
 
 /**
@@ -164,7 +165,7 @@ void thread_pool_insert_pool(ThreadExecuter* thread_executer, ThreadPool* thread
  *
  *
  */
-int thread_pool_insert_job(ThreadExecuter* thread_executer, int thread_pool_id, Job* job); // takes ownership of job 
+uint32_t thread_pool_insert_job(ThreadExecuter* thread_executer, uint32_t thread_pool_id, Job* job); // takes ownership of job 
 
 
 /**
@@ -175,7 +176,7 @@ int thread_pool_insert_job(ThreadExecuter* thread_executer, int thread_pool_id, 
  * @param job_id 
  * @return int 0 if removal sucessfull, reffer to ThreadPoolError otherwise.
  */
-int thread_pool_remove_job(ThreadExecuter* thread_executer, int thread_pool_id, int job_id); // takes ownership of job 
+uint32_t thread_pool_remove_job(ThreadExecuter* thread_executer, uint32_t thread_pool_id, uint32_t job_id); // takes ownership of job 
 
 void thread_pool_dispatch();
 

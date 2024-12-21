@@ -6,8 +6,18 @@ Threadpool implementaion.
 
 
 {\ttfamily \#include \char`\"{}../data\+\_\+structures/lists/linked\+\_\+list.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stdint.\+h\char`\"{}}\newline
 Include dependency graph for thread\+\_\+pool.\+h\+:
 % FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structThreadExecuter}{Thread\+Executer}}
+\begin{DoxyCompactList}\small\item\em Manages the control flow for spawning, locking, and serving jobs from different thread pools. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structThreadPool}{Thread\+Pool}}
+\begin{DoxyCompactList}\small\item\em A collection of concuretly runable jobs. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structJob}{Job}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
@@ -24,8 +34,8 @@ Include dependency graph for thread\+\_\+pool.\+h\+:
 typedef struct \mbox{\hyperlink{structThreadExecuter}{Thread\+Executer}} {\bfseries Thread\+Executer}
 \item 
 \mbox{\Hypertarget{thread__pool_8h_a41038e134a98ed33feac12f376a22a9d}\label{thread__pool_8h_a41038e134a98ed33feac12f376a22a9d}} 
-typedef struct \mbox{\hyperlink{structThreadPool}{Thread\+Pool}} {\bfseries Thread\+Pool}
-\item 
+typedef struct \mbox{\hyperlink{structThreadPool}{Thread\+Pool}} \mbox{\hyperlink{thread__pool_8h_a41038e134a98ed33feac12f376a22a9d}{Thread\+Pool}}
+\begin{DoxyCompactList}\small\item\em A collection of concuretly runable jobs. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{thread__pool_8h_a7f678ed7503a7b4211821d14323751d8}\label{thread__pool_8h_a7f678ed7503a7b4211821d14323751d8}} 
 typedef struct \mbox{\hyperlink{structJob}{Job}} {\bfseries Job}
 \end{DoxyCompactItemize}
@@ -65,8 +75,8 @@ void {\bfseries thread\+\_\+pool\+\_\+thread\+\_\+executer\+\_\+destructor} (\mb
 \mbox{\Hypertarget{thread__pool_8h_a84b4f7c80e9318a36e311fe332c164ca}\label{thread__pool_8h_a84b4f7c80e9318a36e311fe332c164ca}} 
 void {\bfseries thread\+\_\+pool\+\_\+thread\+\_\+pool\+\_\+destructor} (\mbox{\hyperlink{structThreadPool}{Thread\+Pool}} $\ast$thread\+\_\+pool)
 \item 
-\mbox{\Hypertarget{thread__pool_8h_a4bec4f4d1d013b13fa746a3cda5bda8b}\label{thread__pool_8h_a4bec4f4d1d013b13fa746a3cda5bda8b}} 
-\mbox{\hyperlink{structJob}{Job}} $\ast$ {\bfseries thread\+\_\+pool\+\_\+job\+\_\+constructor} ()
+\mbox{\Hypertarget{thread__pool_8h_a4ba126b11fc7d7a6940cfd8a25abb62c}\label{thread__pool_8h_a4ba126b11fc7d7a6940cfd8a25abb62c}} 
+\mbox{\hyperlink{structJob}{Job}} $\ast$ {\bfseries thread\+\_\+pool\+\_\+job\+\_\+constructor} (void $\ast$($\ast$run\+\_\+job)(const void $\ast$input, void $\ast$output), void $\ast$($\ast$free\+\_\+data)(void $\ast$input, void $\ast$output), void $\ast$input, void $\ast$output, int flags)
 \item 
 \mbox{\Hypertarget{thread__pool_8h_ae6b18f6921cbfc8dba865481f38da025}\label{thread__pool_8h_ae6b18f6921cbfc8dba865481f38da025}} 
 void {\bfseries thread\+\_\+pool\+\_\+job\+\_\+destructor} (\mbox{\hyperlink{structJob}{Job}} $\ast$job)

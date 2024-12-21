@@ -8,6 +8,6 @@ var searchData=
   ['thread_5fpool_5fremove_5fjob_24',['thread_pool_remove_job',['../thread__pool_8h.html#a6699bf0202dfb755d09cdbaca98c0d59',1,'thread_pool.h']]],
   ['thread_5fpool_5fthread_5fexecuter_5fconstructor_25',['thread_pool_thread_executer_constructor',['../thread__pool_8h.html#a40c3f588a0af8a4b36ae8f37187e95e2',1,'thread_pool.h']]],
   ['threadexecuter_26',['ThreadExecuter',['../structThreadExecuter.html',1,'']]],
-  ['threadpool_27',['ThreadPool',['../structThreadPool.html',1,'']]],
+  ['threadpool_27',['ThreadPool',['../structThreadPool.html',1,'ThreadPool'],['../thread__pool_8h.html#a41038e134a98ed33feac12f376a22a9d',1,'ThreadPool():&#160;thread_pool.h']]],
   ['threadpoolerror_28',['ThreadPoolError',['../thread__pool_8h.html#aebcec945e0277651fae3d5ccfb5c31cf',1,'thread_pool.h']]]
 ];
