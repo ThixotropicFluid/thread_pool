@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\danie\source\repos\c\fisrt_c_game\build\CMakeFiles\ba30a6fde3ecca14bd3a80655972366f\INSTALL_force.rule">
+    <CustomBuild Include="C:\Users\danie\source\repos\c\thread_pool\build\CMakeFiles\096a3f44cdd2940c4fabf8f1cd9b0936\INSTALL_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{1C1E7158-67EB-3913-B562-0C4BFC1934A2}</UniqueIdentifier>
+      <UniqueIdentifier>{BA45A5AF-A530-3540-A220-C4B67B5CF846}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

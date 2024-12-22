@@ -12,13 +12,15 @@
  */
 
 #include "../data_structures/lists/linked_list.h"
+#include "stdint.h"
 
+/*
 #ifdef _WIN32
     #include <pthreads-w32.h>  // For Windows
 #else
     #include <pthread.h>       // For Unix-based systems (Linux, macOS, etc.)
 #endif
-
+*/
 
 /** @def THREAD_POOL_MAX_POOLS
  *  @brief Maximum number of thread pools supported.
@@ -28,6 +30,8 @@
  *  @brief Maximum number of threads in a thread executer.
  */
 #define THREAD_POOL_MAX_THREADS 256
+
+#define THEAD_POOL_MAX_STRING_LENGTH 50
 
 /**
  * @brief Flags used for Job execution.
@@ -52,12 +56,32 @@ typedef enum {
     PoolToExecute = 1 << 2, 
     /*!This pool is part of the regular execution loop. 
     It will automatically be scheduled according first in first out*/
-    PoolScheduled = 1 << 3, 
+    PoolScheduled = 1 << 3,
+    /*! This pool has been complete. If PoolScheduled, 
+    this flag will be cleard at the begining of the next execution cycle*/ 
+    PoolComplete = 1 << 4,
 
 } PoolFlags;
 typedef enum {
+    /*! Once all pools have been executed. Automaticlly re-run them. If not thread_pool_dispatch has to be called to. This is set by the user */
+    AutomaticRefreash = 1 << 0,
+    /*! Once all pools have been executed, this flag is set by the system, and cleared by thread_pool_dispatch. This flag is not valid if AutomaticRefreash is enabled*/
+    DispatchDone = 1 << 1,
+    /*! This flag is set to tell the executer to stop prossesing, 
+    kill threads and free it's self. This will transpire at the end of the current 
+    update loop*/
+    ShouldClose = 1 << 2,
+} ExecuterFlags;
+typedef enum {
+    /*! The pool id that is attempting to be accessed does not exist*/
     POOL_ID_DOES_NOT_EXIST = -1,
-} ThreadPoolErrors;
+    /*! The max number of pools in a thread executer has been reached*/
+    POOL_MAX_REACHED = -2,
+    /*! Job cannot be found with the scope being searched*/
+    JOB_ID_DOES_NOT_EXIST = -3,
+    /*!Invalid Job, ensuer that input, output, and job_run pointers are not null*/
+    JOB_INVALID = -4,
+} ThreadPoolError;
 
 
 /**
@@ -70,8 +94,13 @@ typedef enum {
  */
 typedef struct ThreadExecuter {
     // Resposible for contoll flow of spawing, locking, and serving jobs from different threadpools
-    pthread_t threads[];
+    // TODO: actually make the multithreading lmao. I'm tryting to get this work single threaded first
+
+    //pthread_t threads[];
+    //TODO: add scheduling matrix 
     struct ThreadPool* thread_pools[THREAD_POOL_MAX_POOLS];
+    struct LinkedList job_queue;
+    
 } ThreadExecuter;
 /**
  * @brief A collection of concuretly runable jobs
@@ -79,11 +108,9 @@ typedef struct ThreadExecuter {
  */
 typedef struct ThreadPool {
     //  Repseresnts a set of concourent tasks
-    
-    char* name; // optional name, for debugging purpouses
-    int id; // Unique ID for inserting pool, up to THREAD_POOL_MAX_POOLS pools
-    int pool_priority; // used by ThreadExecuter to serve next job
-    int pool_flags; // flags used by jobs and 
+    uint32_t id; // Unique ID for inserting pool, up to THREAD_POOL_MAX_POOLS pools
+    uint32_t priority; // used by ThreadExecuter to serve next job
+    uint32_t flags; // flags used by jobs and 
 
     struct LinkedList jobs; // set of jobs
     
@@ -110,7 +137,7 @@ typedef struct Job {
      */
     void* input;
     void* output;
-    int flags;
+    uint32_t flags;
 } Job;
 
 
@@ -119,10 +146,10 @@ typedef struct Job {
 ThreadExecuter* thread_pool_thread_executer_constructor();
 void thread_pool_thread_executer_destructor(ThreadExecuter* thread_executer);
 
-ThreadPool* thread_pool_thread_pool_constructor();
+ThreadPool* thread_pool_thread_pool_constructor(uint32_t priority, uint32_t flags);
 void thread_pool_thread_pool_destructor(ThreadPool* thread_pool);
 
-Job* thread_pool_job_constructor();
+Job* thread_pool_job_constructor(void* (*run_job)(const void* input, void* output), void* (*free_data)(void* input, void* output), void* input, void* output, uint32_t flags);
 void thread_pool_job_destructor(Job* job);
 
 /**
@@ -140,19 +167,28 @@ void thread_pool_insert_pool(ThreadExecuter* thread_executer, ThreadPool* thread
  * @param thread_executer Thread Executer to add to 
  * @param thread_pool_id ID of pool to be added to. If the pool if the pool id does not exist, the job addition will fail
  * @param job Job to be added 
- * @return int ID of the job, -1 if the job was failed to be added. In the failure case, the ownership of the job stays will the caller.
+ * @return int ID of the job, or a ThreadPoolErrors error code. In the failure case, the ownership of the job stays will the caller.
  *
  * This function adds a job into a pool in a thread executer. If the pool has a Pool asycnous flag, 
  * the job will be done accordind to fisrt in fist out. Otherwise, the job will be added into an addition queue, which will
  * be resolved at the start of the next thread execution group. 
- * The return of this fucntion will either be an error code, or 
  *
  *
  */
-int thread_pool_insert_job(ThreadExecuter* thread_executer, int thread_pool_id, Job* job); // takes ownership of job 
+uint32_t thread_pool_insert_job(ThreadExecuter* thread_executer, uint32_t thread_pool_id, Job* job); // takes ownership of job 
 
-// private methods
-// TODO: move to .c file. 
-void thread_pool_get_next_job(ThreadExecuter* thread_executer); // function to get the next job to be executed
+
+/**
+ * @brief remove job from thread executer
+ * 
+ * @param thread_executer 
+ * @param thread_pool_id 
+ * @param job_id 
+ * @return int 0 if removal sucessfull, reffer to ThreadPoolError otherwise.
+ */
+uint32_t thread_pool_remove_job(ThreadExecuter* thread_executer, uint32_t thread_pool_id, uint32_t job_id); // takes ownership of job 
+
+void thread_pool_dispatch();
+
 
 #endif

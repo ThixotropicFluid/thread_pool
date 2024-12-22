@@ -26,8 +26,8 @@ events:
       Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
       Copyright (C) Microsoft Corporation. All rights reserved.
       
-      Build started 12/14/2024 5:57:54 AM.
-      Project "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\3.31.2\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      Build started 12/20/2024 6:53:49 AM.
+      Project "C:\\Users\\danie\\source\\repos\\c\\thread_pool\\build\\CMakeFiles\\3.31.2\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
         Creating directory "Debug\\CompilerIdC.tlog\\".
@@ -38,7 +38,7 @@ events:
         CMakeCCompilerId.c
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
-        CompilerIdC.vcxproj -> C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\3.31.2\\CompilerIdC\\CompilerIdC.exe
+        CompilerIdC.vcxproj -> C:\\Users\\danie\\source\\repos\\c\\thread_pool\\build\\CMakeFiles\\3.31.2\\CompilerIdC\\CompilerIdC.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
         :VCEnd
@@ -46,13 +46,13 @@ events:
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
-      Done Building Project "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\3.31.2\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      Done Building Project "C:\\Users\\danie\\source\\repos\\c\\thread_pool\\build\\CMakeFiles\\3.31.2\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
       
       Build succeeded.
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.70
+      Time Elapsed 00:00:00.62
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -60,7 +60,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
       
       The C compiler identification is MSVC, found in:
-        C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/3.31.2/CompilerIdC/CompilerIdC.exe
+        C:/Users/danie/source/repos/c/thread_pool/build/CMakeFiles/3.31.2/CompilerIdC/CompilerIdC.exe
       
   -
     kind: "message-v1"
@@ -80,8 +80,8 @@ events:
       Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
       Copyright (C) Microsoft Corporation. All rights reserved.
       
-      Build started 12/14/2024 5:57:55 AM.
-      Project "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\3.31.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      Build started 12/20/2024 6:53:50 AM.
+      Project "C:\\Users\\danie\\source\\repos\\c\\thread_pool\\build\\CMakeFiles\\3.31.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
         Creating directory "Debug\\CompilerIdCXX.tlog\\".
@@ -92,7 +92,7 @@ events:
         CMakeCXXCompilerId.cpp
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
-        CompilerIdCXX.vcxproj -> C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\3.31.2\\CompilerIdCXX\\CompilerIdCXX.exe
+        CompilerIdCXX.vcxproj -> C:\\Users\\danie\\source\\repos\\c\\thread_pool\\build\\CMakeFiles\\3.31.2\\CompilerIdCXX\\CompilerIdCXX.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
@@ -100,13 +100,13 @@ events:
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
-      Done Building Project "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\3.31.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      Done Building Project "C:\\Users\\danie\\source\\repos\\c\\thread_pool\\build\\CMakeFiles\\3.31.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
       
       Build succeeded.
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.54
+      Time Elapsed 00:00:00.47
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -114,7 +114,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
       
       The CXX compiler identification is MSVC, found in:
-        C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/3.31.2/CompilerIdCXX/CompilerIdCXX.exe
+        C:/Users/danie/source/repos/c/thread_pool/build/CMakeFiles/3.31.2/CompilerIdCXX/CompilerIdCXX.exe
       
   -
     kind: "try_compile-v1"
@@ -125,47 +125,47 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-c1w5t5"
-      binary: "C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-c1w5t5"
+      source: "C:/Users/danie/source/repos/c/thread_pool/build/CMakeFiles/CMakeScratch/TryCompile-hykzdu"
+      binary: "C:/Users/danie/source/repos/c/thread_pool/build/CMakeFiles/CMakeScratch/TryCompile-hykzdu"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-c1w5t5'
+        Change Dir: 'C:/Users/danie/source/repos/c/thread_pool/build/CMakeFiles/CMakeScratch/TryCompile-hykzdu'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e5f74.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e0bac.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 12/14/2024 5:57:56 AM.
-        Project "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c1w5t5\\cmTC_e5f74.vcxproj" on node 1 (default targets).
+        Build started 12/20/2024 6:53:51 AM.
+        Project "C:\\Users\\danie\\source\\repos\\c\\thread_pool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hykzdu\\cmTC_e0bac.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_e5f74.dir\\Debug\\".
-          Creating directory "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c1w5t5\\Debug\\".
-          Creating directory "cmTC_e5f74.dir\\Debug\\cmTC_e5f74.tlog\\".
+          Creating directory "cmTC_e0bac.dir\\Debug\\".
+          Creating directory "C:\\Users\\danie\\source\\repos\\c\\thread_pool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hykzdu\\Debug\\".
+          Creating directory "cmTC_e0bac.dir\\Debug\\cmTC_e0bac.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_e5f74.dir\\Debug\\cmTC_e5f74.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_e0bac.dir\\Debug\\cmTC_e0bac.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e5f74.dir\\Debug\\\\" /Fd"cmTC_e5f74.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e0bac.dir\\Debug\\\\" /Fd"cmTC_e0bac.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30709 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CMakeCCompilerABI.c
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e5f74.dir\\Debug\\\\" /Fd"cmTC_e5f74.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e0bac.dir\\Debug\\\\" /Fd"cmTC_e0bac.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c1w5t5\\Debug\\cmTC_e5f74.exe" /INCREMENTAL /ILK:"cmTC_e5f74.dir\\Debug\\cmTC_e5f74.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-c1w5t5/Debug/cmTC_e5f74.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-c1w5t5/Debug/cmTC_e5f74.lib" /MACHINE:X64  /machine:x64 cmTC_e5f74.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_e5f74.vcxproj -> C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c1w5t5\\Debug\\cmTC_e5f74.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\danie\\source\\repos\\c\\thread_pool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hykzdu\\Debug\\cmTC_e0bac.exe" /INCREMENTAL /ILK:"cmTC_e0bac.dir\\Debug\\cmTC_e0bac.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/danie/source/repos/c/thread_pool/build/CMakeFiles/CMakeScratch/TryCompile-hykzdu/Debug/cmTC_e0bac.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/danie/source/repos/c/thread_pool/build/CMakeFiles/CMakeScratch/TryCompile-hykzdu/Debug/cmTC_e0bac.lib" /MACHINE:X64  /machine:x64 cmTC_e0bac.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_e0bac.vcxproj -> C:\\Users\\danie\\source\\repos\\c\\thread_pool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hykzdu\\Debug\\cmTC_e0bac.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_e5f74.dir\\Debug\\cmTC_e5f74.tlog\\unsuccessfulbuild".
-          Touching "cmTC_e5f74.dir\\Debug\\cmTC_e5f74.tlog\\cmTC_e5f74.lastbuildstate".
-        Done Building Project "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c1w5t5\\cmTC_e5f74.vcxproj" (default targets).
+          Deleting file "cmTC_e0bac.dir\\Debug\\cmTC_e0bac.tlog\\unsuccessfulbuild".
+          Touching "cmTC_e0bac.dir\\Debug\\cmTC_e0bac.tlog\\cmTC_e0bac.lastbuildstate".
+        Done Building Project "C:\\Users\\danie\\source\\repos\\c\\thread_pool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hykzdu\\cmTC_e0bac.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.46
+        Time Elapsed 00:00:00.43
         
       exitCode: 0
   -
@@ -205,8 +205,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-9c0gz8"
-      binary: "C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-9c0gz8"
+      source: "C:/Users/danie/source/repos/c/thread_pool/build/CMakeFiles/CMakeScratch/TryCompile-89pjt8"
+      binary: "C:/Users/danie/source/repos/c/thread_pool/build/CMakeFiles/CMakeScratch/TryCompile-89pjt8"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -214,39 +214,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-9c0gz8'
+        Change Dir: 'C:/Users/danie/source/repos/c/thread_pool/build/CMakeFiles/CMakeScratch/TryCompile-89pjt8'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f2002.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_cf064.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 12/14/2024 5:57:57 AM.
-        Project "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9c0gz8\\cmTC_f2002.vcxproj" on node 1 (default targets).
+        Build started 12/20/2024 6:53:52 AM.
+        Project "C:\\Users\\danie\\source\\repos\\c\\thread_pool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-89pjt8\\cmTC_cf064.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_f2002.dir\\Debug\\".
-          Creating directory "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9c0gz8\\Debug\\".
-          Creating directory "cmTC_f2002.dir\\Debug\\cmTC_f2002.tlog\\".
+          Creating directory "cmTC_cf064.dir\\Debug\\".
+          Creating directory "C:\\Users\\danie\\source\\repos\\c\\thread_pool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-89pjt8\\Debug\\".
+          Creating directory "cmTC_cf064.dir\\Debug\\cmTC_cf064.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_f2002.dir\\Debug\\cmTC_f2002.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_cf064.dir\\Debug\\cmTC_cf064.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_f2002.dir\\Debug\\\\" /Fd"cmTC_f2002.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_cf064.dir\\Debug\\\\" /Fd"cmTC_cf064.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30709 for x64
           CMakeCXXCompilerABI.cpp
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_f2002.dir\\Debug\\\\" /Fd"cmTC_f2002.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_cf064.dir\\Debug\\\\" /Fd"cmTC_cf064.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9c0gz8\\Debug\\cmTC_f2002.exe" /INCREMENTAL /ILK:"cmTC_f2002.dir\\Debug\\cmTC_f2002.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-9c0gz8/Debug/cmTC_f2002.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-9c0gz8/Debug/cmTC_f2002.lib" /MACHINE:X64  /machine:x64 cmTC_f2002.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_f2002.vcxproj -> C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9c0gz8\\Debug\\cmTC_f2002.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\danie\\source\\repos\\c\\thread_pool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-89pjt8\\Debug\\cmTC_cf064.exe" /INCREMENTAL /ILK:"cmTC_cf064.dir\\Debug\\cmTC_cf064.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/danie/source/repos/c/thread_pool/build/CMakeFiles/CMakeScratch/TryCompile-89pjt8/Debug/cmTC_cf064.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/danie/source/repos/c/thread_pool/build/CMakeFiles/CMakeScratch/TryCompile-89pjt8/Debug/cmTC_cf064.lib" /MACHINE:X64  /machine:x64 cmTC_cf064.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_cf064.vcxproj -> C:\\Users\\danie\\source\\repos\\c\\thread_pool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-89pjt8\\Debug\\cmTC_cf064.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_f2002.dir\\Debug\\cmTC_f2002.tlog\\unsuccessfulbuild".
-          Touching "cmTC_f2002.dir\\Debug\\cmTC_f2002.tlog\\cmTC_f2002.lastbuildstate".
-        Done Building Project "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9c0gz8\\cmTC_f2002.vcxproj" (default targets).
+          Deleting file "cmTC_cf064.dir\\Debug\\cmTC_cf064.tlog\\unsuccessfulbuild".
+          Touching "cmTC_cf064.dir\\Debug\\cmTC_cf064.tlog\\cmTC_cf064.lastbuildstate".
+        Done Building Project "C:\\Users\\danie\\source\\repos\\c\\thread_pool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-89pjt8\\cmTC_cf064.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.55
+        Time Elapsed 00:00:00.43
         
       exitCode: 0
   -
@@ -277,238 +277,4 @@ events:
       Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.30.30705/bin/HostX64/x64/link.exe" "-v"
       Microsoft (R) Incremental Linker Version 14.30.30709.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
-      - "build/_deps/raylib-src/cmake/AddIfFlagCompiles.cmake:3 (CHECK_C_COMPILER_FLAG)"
-      - "build/_deps/raylib-src/cmake/CompilerFlags.cmake:5 (add_if_flag_compiles)"
-      - "build/_deps/raylib-src/CMakeLists.txt:34 (include)"
-    checks:
-      - "Performing Test COMPILER_HAS_THOSE_TOGGLES"
-    directories:
-      source: "C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-xtjm0x"
-      binary: "C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-xtjm0x"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/danie/source/repos/c/fisrt_c_game/build/_deps/raylib-src/cmake"
-    buildResult:
-      variable: "COMPILER_HAS_THOSE_TOGGLES"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-xtjm0x'
-        
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a541a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
-        Copyright (C) Microsoft Corporation. All rights reserved.
-        
-        Build started 12/14/2024 7:11:39 AM.
-        Project "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xtjm0x\\cmTC_a541a.vcxproj" on node 1 (default targets).
-        PrepareForBuild:
-          Creating directory "cmTC_a541a.dir\\Debug\\".
-          Creating directory "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xtjm0x\\Debug\\".
-          Creating directory "cmTC_a541a.dir\\Debug\\cmTC_a541a.tlog\\".
-        InitializeBuildStatus:
-          Creating "cmTC_a541a.dir\\Debug\\cmTC_a541a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_THOSE_TOGGLES /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a541a.dir\\Debug\\\\" /Fd"cmTC_a541a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue  -Werror=pointer-arith "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xtjm0x\\src.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30709 for x64
-          Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_THOSE_TOGGLES /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a541a.dir\\Debug\\\\" /Fd"cmTC_a541a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue  -Werror=pointer-arith "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xtjm0x\\src.c"
-        cl : command line error D8021: invalid numeric argument '/Werror=pointer-arith' [C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xtjm0x\\cmTC_a541a.vcxproj]
-        Done Building Project "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xtjm0x\\cmTC_a541a.vcxproj" (default targets) -- FAILED.
-        
-        Build FAILED.
-        
-        "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xtjm0x\\cmTC_a541a.vcxproj" (default target) (1) ->
-        (ClCompile target) -> 
-          cl : command line error D8021: invalid numeric argument '/Werror=pointer-arith' [C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xtjm0x\\cmTC_a541a.vcxproj]
-        
-            0 Warning(s)
-            1 Error(s)
-        
-        Time Elapsed 00:00:00.39
-        
-      exitCode: 1
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
-      - "build/_deps/raylib-src/src/external/glfw/CMakeLists.txt:60 (find_package)"
-    checks:
-      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
-    directories:
-      source: "C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-l9cg1q"
-      binary: "C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-l9cg1q"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/danie/source/repos/c/fisrt_c_game/build/_deps/raylib-src/cmake;C:/Users/danie/source/repos/c/fisrt_c_game/build/_deps/raylib-src/src/external/glfw/CMake/modules"
-    buildResult:
-      variable: "CMAKE_HAVE_LIBC_PTHREAD"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-l9cg1q'
-        
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c227a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
-        Copyright (C) Microsoft Corporation. All rights reserved.
-        
-        Build started 12/14/2024 7:11:40 AM.
-        Project "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l9cg1q\\cmTC_c227a.vcxproj" on node 1 (default targets).
-        PrepareForBuild:
-          Creating directory "cmTC_c227a.dir\\Debug\\".
-          Creating directory "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l9cg1q\\Debug\\".
-          Creating directory "cmTC_c227a.dir\\Debug\\cmTC_c227a.tlog\\".
-        InitializeBuildStatus:
-          Creating "cmTC_c227a.dir\\Debug\\cmTC_c227a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c227a.dir\\Debug\\\\" /Fd"cmTC_c227a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l9cg1q\\src.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30709 for x64
-          src.c
-          Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c227a.dir\\Debug\\\\" /Fd"cmTC_c227a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l9cg1q\\src.c"
-        C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l9cg1q\\src.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l9cg1q\\cmTC_c227a.vcxproj]
-        Done Building Project "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l9cg1q\\cmTC_c227a.vcxproj" (default targets) -- FAILED.
-        
-        Build FAILED.
-        
-        "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l9cg1q\\cmTC_c227a.vcxproj" (default target) (1) ->
-        (ClCompile target) -> 
-          C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l9cg1q\\src.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-l9cg1q\\cmTC_c227a.vcxproj]
-        
-            0 Warning(s)
-            1 Error(s)
-        
-        Time Elapsed 00:00:00.61
-        
-      exitCode: 1
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:175 (_threads_check_lib)"
-      - "build/_deps/raylib-src/src/external/glfw/CMakeLists.txt:60 (find_package)"
-    checks:
-      - "Looking for pthread_create in pthreads"
-    directories:
-      source: "C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-hyymel"
-      binary: "C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-hyymel"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/danie/source/repos/c/fisrt_c_game/build/_deps/raylib-src/cmake;C:/Users/danie/source/repos/c/fisrt_c_game/build/_deps/raylib-src/src/external/glfw/CMake/modules"
-    buildResult:
-      variable: "CMAKE_HAVE_PTHREADS_CREATE"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-hyymel'
-        
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8ff82.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
-        Copyright (C) Microsoft Corporation. All rights reserved.
-        
-        Build started 12/14/2024 7:11:41 AM.
-        Project "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hyymel\\cmTC_8ff82.vcxproj" on node 1 (default targets).
-        PrepareForBuild:
-          Creating directory "cmTC_8ff82.dir\\Debug\\".
-          Creating directory "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hyymel\\Debug\\".
-          Creating directory "cmTC_8ff82.dir\\Debug\\cmTC_8ff82.tlog\\".
-        InitializeBuildStatus:
-          Creating "cmTC_8ff82.dir\\Debug\\cmTC_8ff82.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8ff82.dir\\Debug\\\\" /Fd"cmTC_8ff82.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hyymel\\CheckFunctionExists.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30709 for x64
-          CheckFunctionExists.c
-          Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8ff82.dir\\Debug\\\\" /Fd"cmTC_8ff82.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hyymel\\CheckFunctionExists.c"
-        Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hyymel\\Debug\\cmTC_8ff82.exe" /INCREMENTAL /ILK:"cmTC_8ff82.dir\\Debug\\cmTC_8ff82.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-hyymel/Debug/cmTC_8ff82.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-hyymel/Debug/cmTC_8ff82.lib" /MACHINE:X64  /machine:x64 cmTC_8ff82.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hyymel\\cmTC_8ff82.vcxproj]
-        Done Building Project "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hyymel\\cmTC_8ff82.vcxproj" (default targets) -- FAILED.
-        
-        Build FAILED.
-        
-        "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hyymel\\cmTC_8ff82.vcxproj" (default target) (1) ->
-        (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hyymel\\cmTC_8ff82.vcxproj]
-        
-            0 Warning(s)
-            1 Error(s)
-        
-        Time Elapsed 00:00:00.46
-        
-      exitCode: 1
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:176 (_threads_check_lib)"
-      - "build/_deps/raylib-src/src/external/glfw/CMakeLists.txt:60 (find_package)"
-    checks:
-      - "Looking for pthread_create in pthread"
-    directories:
-      source: "C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-6nspq2"
-      binary: "C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-6nspq2"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/danie/source/repos/c/fisrt_c_game/build/_deps/raylib-src/cmake;C:/Users/danie/source/repos/c/fisrt_c_game/build/_deps/raylib-src/src/external/glfw/CMake/modules"
-    buildResult:
-      variable: "CMAKE_HAVE_PTHREAD_CREATE"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-6nspq2'
-        
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_699de.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
-        Copyright (C) Microsoft Corporation. All rights reserved.
-        
-        Build started 12/14/2024 7:11:42 AM.
-        Project "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6nspq2\\cmTC_699de.vcxproj" on node 1 (default targets).
-        PrepareForBuild:
-          Creating directory "cmTC_699de.dir\\Debug\\".
-          Creating directory "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6nspq2\\Debug\\".
-          Creating directory "cmTC_699de.dir\\Debug\\cmTC_699de.tlog\\".
-        InitializeBuildStatus:
-          Creating "cmTC_699de.dir\\Debug\\cmTC_699de.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_699de.dir\\Debug\\\\" /Fd"cmTC_699de.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6nspq2\\CheckFunctionExists.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30709 for x64
-          CheckFunctionExists.c
-          Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_699de.dir\\Debug\\\\" /Fd"cmTC_699de.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6nspq2\\CheckFunctionExists.c"
-        Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6nspq2\\Debug\\cmTC_699de.exe" /INCREMENTAL /ILK:"cmTC_699de.dir\\Debug\\cmTC_699de.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-6nspq2/Debug/cmTC_699de.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/danie/source/repos/c/fisrt_c_game/build/CMakeFiles/CMakeScratch/TryCompile-6nspq2/Debug/cmTC_699de.lib" /MACHINE:X64  /machine:x64 cmTC_699de.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6nspq2\\cmTC_699de.vcxproj]
-        Done Building Project "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6nspq2\\cmTC_699de.vcxproj" (default targets) -- FAILED.
-        
-        Build FAILED.
-        
-        "C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6nspq2\\cmTC_699de.vcxproj" (default target) (1) ->
-        (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\danie\\source\\repos\\c\\fisrt_c_game\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6nspq2\\cmTC_699de.vcxproj]
-        
-            0 Warning(s)
-            1 Error(s)
-        
-        Time Elapsed 00:00:00.43
-        
-      exitCode: 1
 ...

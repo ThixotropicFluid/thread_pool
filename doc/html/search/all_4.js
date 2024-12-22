@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['poolasynchronous_6',['PoolAsynchronous',['../thread__pool_8h.html#a97d343025222f6ac23916775492ce88bae1550b3b3cfc7a6c6ea062612d8b8c21',1,'thread_pool.h']]],
-  ['poolbufferswap_7',['PoolBufferSwap',['../thread__pool_8h.html#a97d343025222f6ac23916775492ce88ba7467d16c28a2e16d84797a3994260cb2',1,'thread_pool.h']]],
-  ['poolflags_8',['PoolFlags',['../thread__pool_8h.html#a97d343025222f6ac23916775492ce88b',1,'PoolFlags():&#160;thread_pool.h'],['../thread__pool_8h.html#a26002663f682518d1d88f2b19436e4c7',1,'PoolFlags():&#160;thread_pool.h']]],
-  ['poolscheduled_9',['PoolScheduled',['../thread__pool_8h.html#a97d343025222f6ac23916775492ce88ba64137aeaa521a17f965ffed9f259fa55',1,'thread_pool.h']]],
-  ['pooltoexecute_10',['PoolToExecute',['../thread__pool_8h.html#a97d343025222f6ac23916775492ce88ba61751a9712e75234235c2f33b704a651',1,'thread_pool.h']]]
+  ['job_4',['Job',['../structJob.html',1,'']]],
+  ['job_5fid_5fdoes_5fnot_5fexist_5',['JOB_ID_DOES_NOT_EXIST',['../thread__pool_8h.html#aebcec945e0277651fae3d5ccfb5c31cfa4c230b88ba1acf8543e4624467ddb8c5',1,'thread_pool.h']]],
+  ['job_5finvalid_6',['JOB_INVALID',['../thread__pool_8h.html#aebcec945e0277651fae3d5ccfb5c31cfa881ca0565d6f15042674f075390e5c65',1,'thread_pool.h']]],
+  ['jobbufferswap_7',['JobBufferSwap',['../thread__pool_8h.html#a7eb534b11f7e60a7da3a2d2470abde6fab8695b2dd707e90e3a83381e07c3c821',1,'thread_pool.h']]],
+  ['jobflags_8',['JobFlags',['../thread__pool_8h.html#a7eb534b11f7e60a7da3a2d2470abde6f',1,'thread_pool.h']]]
 ];

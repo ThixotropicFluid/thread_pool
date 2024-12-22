@@ -79,7 +79,7 @@ $(function() {
 <p>Threadpool implementaion.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;../data_structures/lists/linked_list.h&quot;</code><br />
-<code>#include &lt;pthread.h&gt;</code><br />
+<code>#include &quot;stdint.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for thread_pool.h:</div>
 <div class="dyncontent">
@@ -112,14 +112,6 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a85a404c366c8695b610e1bb6af5c61de"><td class="memItemLeft" align="right" valign="top"><a id="a85a404c366c8695b610e1bb6af5c61de"></a>
-typedef enum <a class="el" href="thread__pool_8h.html#a7eb534b11f7e60a7da3a2d2470abde6f">JobFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread__pool_8h.html#a85a404c366c8695b610e1bb6af5c61de">JobFlags</a></td></tr>
-<tr class="memdesc:a85a404c366c8695b610e1bb6af5c61de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags used for <a class="el" href="structJob.html">Job</a> execution. <br /></td></tr>
-<tr class="separator:a85a404c366c8695b610e1bb6af5c61de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26002663f682518d1d88f2b19436e4c7"><td class="memItemLeft" align="right" valign="top"><a id="a26002663f682518d1d88f2b19436e4c7"></a>
-typedef enum <a class="el" href="thread__pool_8h.html#a97d343025222f6ac23916775492ce88b">PoolFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread__pool_8h.html#a26002663f682518d1d88f2b19436e4c7">PoolFlags</a></td></tr>
-<tr class="memdesc:a26002663f682518d1d88f2b19436e4c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags used to <a class="el" href="structThreadPool.html" title="A collection of concuretly runable jobs.">ThreadPool</a> managment. <br /></td></tr>
-<tr class="separator:a26002663f682518d1d88f2b19436e4c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48473e6da89a499160af3b83418ee3e6"><td class="memItemLeft" align="right" valign="top"><a id="a48473e6da89a499160af3b83418ee3e6"></a>
 typedef struct <a class="el" href="structThreadExecuter.html">ThreadExecuter</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ThreadExecuter</b></td></tr>
 <tr class="separator:a48473e6da89a499160af3b83418ee3e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,6 +136,16 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a97d343025222f6ac23916775492ce88b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags used to <a class="el" href="structThreadPool.html" title="A collection of concuretly runable jobs.">ThreadPool</a> managment.  <a href="thread__pool_8h.html#a97d343025222f6ac23916775492ce88b">More...</a><br /></td></tr>
 <tr class="separator:a97d343025222f6ac23916775492ce88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa5982b4ba617491ef71ec4aec573e0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread__pool_8h.html#a0aa5982b4ba617491ef71ec4aec573e0">ExecuterFlags</a> { <a class="el" href="thread__pool_8h.html#a0aa5982b4ba617491ef71ec4aec573e0aad7949c97278e2824344f12ce4fa8be1">AutomaticRefreash</a> = 1 &lt;&lt; 0
+, <a class="el" href="thread__pool_8h.html#a0aa5982b4ba617491ef71ec4aec573e0aa66ae731f008d4cc41f1c5a1c7b11c85">DispatchDone</a> = 1 &lt;&lt; 1
+ }</td></tr>
+<tr class="separator:a0aa5982b4ba617491ef71ec4aec573e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebcec945e0277651fae3d5ccfb5c31cf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread__pool_8h.html#aebcec945e0277651fae3d5ccfb5c31cf">ThreadPoolError</a> { <a class="el" href="thread__pool_8h.html#aebcec945e0277651fae3d5ccfb5c31cfaf9483ab554ee7c14a79c956c6f8c2dde">POOL_ID_DOES_NOT_EXIST</a> = -1
+, <a class="el" href="thread__pool_8h.html#aebcec945e0277651fae3d5ccfb5c31cfa2a2363558eee0d8b32b2e44c5b48acc7">POOL_MAX_REACHED</a> = -2
+, <a class="el" href="thread__pool_8h.html#aebcec945e0277651fae3d5ccfb5c31cfa4c230b88ba1acf8543e4624467ddb8c5">JOB_ID_DOES_NOT_EXIST</a> = -3
+, <a class="el" href="thread__pool_8h.html#aebcec945e0277651fae3d5ccfb5c31cfa881ca0565d6f15042674f075390e5c65">JOB_INVALID</a> = -4
+ }</td></tr>
+<tr class="separator:aebcec945e0277651fae3d5ccfb5c31cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -158,9 +160,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>thread_pool_thread_ex
 <tr class="memitem:a84b4f7c80e9318a36e311fe332c164ca"><td class="memItemLeft" align="right" valign="top"><a id="a84b4f7c80e9318a36e311fe332c164ca"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>thread_pool_thread_pool_destructor</b> (<a class="el" href="structThreadPool.html">ThreadPool</a> *thread_pool)</td></tr>
 <tr class="separator:a84b4f7c80e9318a36e311fe332c164ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bec4f4d1d013b13fa746a3cda5bda8b"><td class="memItemLeft" align="right" valign="top"><a id="a4bec4f4d1d013b13fa746a3cda5bda8b"></a>
-<a class="el" href="structJob.html">Job</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>thread_pool_job_constructor</b> ()</td></tr>
-<tr class="separator:a4bec4f4d1d013b13fa746a3cda5bda8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba126b11fc7d7a6940cfd8a25abb62c"><td class="memItemLeft" align="right" valign="top"><a id="a4ba126b11fc7d7a6940cfd8a25abb62c"></a>
+<a class="el" href="structJob.html">Job</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>thread_pool_job_constructor</b> (void *(*run_job)(const void *input, void *output), void *(*free_data)(void *input, void *output), void *input, void *output, int flags)</td></tr>
+<tr class="separator:a4ba126b11fc7d7a6940cfd8a25abb62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6b18f6921cbfc8dba865481f38da025"><td class="memItemLeft" align="right" valign="top"><a id="ae6b18f6921cbfc8dba865481f38da025"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>thread_pool_job_destructor</b> (<a class="el" href="structJob.html">Job</a> *job)</td></tr>
 <tr class="separator:ae6b18f6921cbfc8dba865481f38da025"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,14 +172,37 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>thread_pool_job_destr
 <tr class="memitem:afa131d910025de9fbc16e8545203e007"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread__pool_8h.html#afa131d910025de9fbc16e8545203e007">thread_pool_insert_job</a> (<a class="el" href="structThreadExecuter.html">ThreadExecuter</a> *thread_executer, int thread_pool_id, <a class="el" href="structJob.html">Job</a> *job)</td></tr>
 <tr class="memdesc:afa131d910025de9fbc16e8545203e007"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds a job to a thread pool which is in a thread executer  <a href="thread__pool_8h.html#afa131d910025de9fbc16e8545203e007">More...</a><br /></td></tr>
 <tr class="separator:afa131d910025de9fbc16e8545203e007"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bb5252b9ecee0e83a3efd19a36b8cef"><td class="memItemLeft" align="right" valign="top"><a id="a7bb5252b9ecee0e83a3efd19a36b8cef"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>thread_pool_get_next_job</b> (<a class="el" href="structThreadExecuter.html">ThreadExecuter</a> *thread_executer)</td></tr>
-<tr class="separator:a7bb5252b9ecee0e83a3efd19a36b8cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6699bf0202dfb755d09cdbaca98c0d59"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread__pool_8h.html#a6699bf0202dfb755d09cdbaca98c0d59">thread_pool_remove_job</a> (<a class="el" href="structThreadExecuter.html">ThreadExecuter</a> *thread_executer, int thread_pool_id, int job_id)</td></tr>
+<tr class="memdesc:a6699bf0202dfb755d09cdbaca98c0d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove job from thread executer  <a href="thread__pool_8h.html#a6699bf0202dfb755d09cdbaca98c0d59">More...</a><br /></td></tr>
+<tr class="separator:a6699bf0202dfb755d09cdbaca98c0d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6861e1513710c333089b64f469d9cc9"><td class="memItemLeft" align="right" valign="top"><a id="ac6861e1513710c333089b64f469d9cc9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>thread_pool_dispatch</b> ()</td></tr>
+<tr class="separator:ac6861e1513710c333089b64f469d9cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Threadpool implementaion. </p>
 <p>Structures used for the setup and dispatch of a thread pool. </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a0aa5982b4ba617491ef71ec4aec573e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aa5982b4ba617491ef71ec4aec573e0">&#9670;&nbsp;</a></span>ExecuterFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="thread__pool_8h.html#a0aa5982b4ba617491ef71ec4aec573e0">ExecuterFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0aa5982b4ba617491ef71ec4aec573e0aad7949c97278e2824344f12ce4fa8be1"></a>AutomaticRefreash&#160;</td><td class="fielddoc"><p>Once all pools have been executed. Automaticlly re-run them. If not thread_pool_dispatch has to be called to. This is set by the user </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0aa5982b4ba617491ef71ec4aec573e0aa66ae731f008d4cc41f1c5a1c7b11c85"></a>DispatchDone&#160;</td><td class="fielddoc"><p>Once all pools have been executed, this flag is set by the system, and cleared by thread_pool_dispatch. This flag is not valid if AutomaticRefreash is enabled </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a7eb534b11f7e60a7da3a2d2470abde6f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7eb534b11f7e60a7da3a2d2470abde6f">&#9670;&nbsp;</a></span>JobFlags</h2>
 
@@ -219,6 +244,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>thread_pool_get_next_
 <tr><td class="fieldname"><a id="a97d343025222f6ac23916775492ce88ba61751a9712e75234235c2f33b704a651"></a>PoolToExecute&#160;</td><td class="fielddoc"><p>This pool is requesting to be executed. This flag will be unset once the pool has been pushed into the job queue. This flag is ignored if PoolScheduled flag is set </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a97d343025222f6ac23916775492ce88ba64137aeaa521a17f965ffed9f259fa55"></a>PoolScheduled&#160;</td><td class="fielddoc"><p>This pool is part of the regular execution loop. It will automatically be scheduled according first in first out </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="aebcec945e0277651fae3d5ccfb5c31cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebcec945e0277651fae3d5ccfb5c31cf">&#9670;&nbsp;</a></span>ThreadPoolError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="thread__pool_8h.html#aebcec945e0277651fae3d5ccfb5c31cf">ThreadPoolError</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aebcec945e0277651fae3d5ccfb5c31cfaf9483ab554ee7c14a79c956c6f8c2dde"></a>POOL_ID_DOES_NOT_EXIST&#160;</td><td class="fielddoc"><p>The pool id that is attempting to be accessed does not exist </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aebcec945e0277651fae3d5ccfb5c31cfa2a2363558eee0d8b32b2e44c5b48acc7"></a>POOL_MAX_REACHED&#160;</td><td class="fielddoc"><p>The max number of pools in a thread executer has been reached </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aebcec945e0277651fae3d5ccfb5c31cfa4c230b88ba1acf8543e4624467ddb8c5"></a>JOB_ID_DOES_NOT_EXIST&#160;</td><td class="fielddoc"><p><a class="el" href="structJob.html">Job</a> cannot be found with the scope being searched </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aebcec945e0277651fae3d5ccfb5c31cfa881ca0565d6f15042674f075390e5c65"></a>JOB_INVALID&#160;</td><td class="fielddoc"><p>Invalid <a class="el" href="structJob.html">Job</a>, ensuer that input, output, and job_run pointers are not null </p>
 </td></tr>
 </table>
 
@@ -266,7 +315,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>thread_pool_get_next_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>int ID of the job, -1 if the job was failed to be added. In the failure case, the ownership of the job stays will the caller.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>int ID of the job, or a ThreadPoolErrors error code. In the failure case, the ownership of the job stays will the caller.</dd></dl>
 <p>This function adds a job into a pool in a thread executer. If the pool has a Pool asycnous flag, the job will be done accordind to fisrt in fist out. Otherwise, the job will be added into an addition queue, which will be resolved at the start of the next thread execution group. </p>
 
 </div>
@@ -305,6 +354,51 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>thread_pool_get_next_
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a6699bf0202dfb755d09cdbaca98c0d59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6699bf0202dfb755d09cdbaca98c0d59">&#9670;&nbsp;</a></span>thread_pool_remove_job()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int thread_pool_remove_job </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structThreadExecuter.html">ThreadExecuter</a> *&#160;</td>
+          <td class="paramname"><em>thread_executer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>thread_pool_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>job_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>remove job from thread executer </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread_executer</td><td></td></tr>
+    <tr><td class="paramname">thread_pool_id</td><td></td></tr>
+    <tr><td class="paramname">job_id</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 if removal sucessfull, reffer to ThreadPoolError otherwise. </dd></dl>
 
 </div>
 </div>
