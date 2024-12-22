@@ -56,7 +56,10 @@ typedef enum {
     PoolToExecute = 1 << 2, 
     /*!This pool is part of the regular execution loop. 
     It will automatically be scheduled according first in first out*/
-    PoolScheduled = 1 << 3, 
+    PoolScheduled = 1 << 3,
+    /*! This pool has been complete. If PoolScheduled, 
+    this flag will be cleard at the begining of the next execution cycle*/ 
+    PoolComplete = 1 << 4,
 
 } PoolFlags;
 typedef enum {
@@ -64,6 +67,10 @@ typedef enum {
     AutomaticRefreash = 1 << 0,
     /*! Once all pools have been executed, this flag is set by the system, and cleared by thread_pool_dispatch. This flag is not valid if AutomaticRefreash is enabled*/
     DispatchDone = 1 << 1,
+    /*! This flag is set to tell the executer to stop prossesing, 
+    kill threads and free it's self. This will transpire at the end of the current 
+    update loop*/
+    ShouldClose = 1 << 2,
 } ExecuterFlags;
 typedef enum {
     /*! The pool id that is attempting to be accessed does not exist*/
@@ -90,7 +97,10 @@ typedef struct ThreadExecuter {
     // TODO: actually make the multithreading lmao. I'm tryting to get this work single threaded first
 
     //pthread_t threads[];
+    //TODO: add scheduling matrix 
     struct ThreadPool* thread_pools[THREAD_POOL_MAX_POOLS];
+    struct LinkedList job_queue;
+    
 } ThreadExecuter;
 /**
  * @brief A collection of concuretly runable jobs

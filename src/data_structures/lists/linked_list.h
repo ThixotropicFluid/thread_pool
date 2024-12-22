@@ -22,7 +22,7 @@ typedef struct LinkedList {
  * 
  * @return LinkedList* Pointer to the created linked list.
  */
-LinkedList* linked_list_create();
+LinkedList* linked_list_constructor();
 
 /**
  * @brief Destroys a linked list and frees memory.
@@ -30,7 +30,7 @@ LinkedList* linked_list_create();
  * @param list Pointer to the linked list.
  * @param destructor Function to free the data in each node.
  */
-void linked_list_destroy(LinkedList* list, void (*destructor)(void*));
+void linked_list_destructor(LinkedList* list, void (*destructor)(void*));
 
 /**
  * @brief Adds a new element to the front of the list.
@@ -88,4 +88,11 @@ void* linked_list_peek_back(const LinkedList* list);
  */
 void linked_list_append(LinkedList* destination, const LinkedList* source);
 
+/**
+ * @brief prints the list
+ * 
+ * @param list list
+ * @param format_data Pointer to formating function 
+ */
+void linked_list_print(const LinkedList* list, char* (*format_data)(void* data));
 #endif // LINKED_LIST_H

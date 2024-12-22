@@ -1,5 +1,9 @@
+#ifndef LINKED_LIST_C
+#define LINKED_LIST_C
+
 #include "linked_list.h"
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
 
 // Helper function to create a new node
@@ -14,7 +18,7 @@ static LinkedListNode* linked_list_create_node(void* data) {
 }
 
 // Create a new linked list
-LinkedList* linked_list_create() {
+LinkedList* linked_list_constructor() {
     LinkedList* list = (LinkedList*)malloc(sizeof(LinkedList));
     if (list) {
         list->head = NULL;
@@ -25,7 +29,7 @@ LinkedList* linked_list_create() {
 }
 
 // Destroy a linked list
-void linked_list_destroy(LinkedList* list, void (*destructor)(void*)) {
+void linked_list_destructor(LinkedList* list, void (*destructor)(void*)) {
     if (!list) return;
 
     LinkedListNode* current = list->head;
@@ -33,8 +37,9 @@ void linked_list_destroy(LinkedList* list, void (*destructor)(void*)) {
         LinkedListNode* next = current->next;
         if (destructor) {
             destructor(current->data);
+        } else {
+            free(current);
         }
-        free(current);
         current = next;
     }
     free(list);
@@ -139,3 +144,33 @@ void linked_list_append(LinkedList* destination, const LinkedList* source) {
         current = current->next;
     }
 }
+
+void linked_list_print(const LinkedList* list, char* (*format_data)(void* data)) {
+    if (!list) {
+        printf("Linked list is NULL.\n");
+        return;
+    }
+    if (!format_data) {
+        printf("No format function provided.\n");
+        return;
+    }
+
+    LinkedListNode* current = list->head;
+    printf("[");
+    while (current) {
+        char* formatted = format_data(current->data);
+        if (formatted) {
+            printf("%s", formatted);
+            free(formatted); // Assume format_data dynamically allocates the string
+        } else {
+            printf("NULL");
+        }
+        if (current->next) {
+            printf(", ");
+        }
+        current = current->next;
+    }
+    printf("]\n");
+}
+
+#endif

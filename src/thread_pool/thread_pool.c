@@ -7,10 +7,23 @@
 #include "string.h"
 
 
+void thread_pool_thread_executer();
 
 // to be called by theads
 void thread_pool_get_next_job(ThreadExecuter* thread_executer); // function to get the next job to be executed
+void thread_pool_next_pool(); // function to find which pool needs to be executed next
 
+
+ThreadExecuter* thread_pool_thread_executer_constructor() {
+    ThreadExecuter thread_executer = malloc(sizeof(ThreadExecuter));
+    //set flags so the executer doesn't get confused
+    for(int i = 0; i < THREAD_POOL_MAX_POOLS; i ++) {
+        thread_executer->thread_pools[i].flags = 0;
+    }
+}
+void thread_pool_thread_executer_destructor(ThreadExecuter* thread_executer) {
+
+}
 
 ThreadPool* thread_pool_thread_pool_constructor(uint32_t priority, uint32_t flags) {
     ThreadPool* thread_pool = malloc(sizeof(ThreadPool));
@@ -26,7 +39,7 @@ void thread_pool_thread_pool_destructor(ThreadPool* thread_pool) {
     if (thread_pool == NULL) {
         return;
     }
-    //linked_list_destructor(thread_pool->jobs, &thread_pool_job_destructor);
+    linked_list_destructor(&thread_pool->jobs, &thread_pool_job_destructor);
     free(thread_pool);
 }
 
